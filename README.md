@@ -12,5 +12,8 @@ Actions
  * [mpn-latest](./mpn-latest): Find date of the latest [MPN][]
    snapshot.
 
+ * [publish-r-release](./publish-r-release): Publish an R package
+   release to `s3://mpn.metworx.dev`.
+
 
 [MPN]: https://mpn.metworx.com
