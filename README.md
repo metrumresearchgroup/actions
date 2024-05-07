@@ -15,5 +15,8 @@ Actions
  * [publish-r-release](./publish-r-release): Publish an R package
    release to `s3://mpn.metworx.dev`.
 
+ * [setup-bbi](./setup-bbi): Install [bbi][].
 
+
+[bbi]: https://github.com/metrumresearchgroup/bbi
 [MPN]: https://mpn.metworx.com
