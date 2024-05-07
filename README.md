@@ -8,3 +8,9 @@ This repository defines GitHub Actions for shared use by
 
 Actions
 -------
+
+ * [mpn-latest](./mpn-latest): Find date of the latest [MPN][]
+   snapshot.
+
+
+[MPN]: https://mpn.metworx.com
