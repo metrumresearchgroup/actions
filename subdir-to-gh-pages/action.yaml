@@ -1,0 +1,24 @@
+name: Push a directory's contents to gh-pages
+description: >
+  Create a commit on the gh-pages branch with the contents of the
+  specified directory and push the update to the specified remote.
+inputs:
+  directory:
+    description: Directory with contents to absorb to gh-pages branch
+    default: docs
+  remote:
+    description: Remote to sync with
+    default: origin
+runs:
+  using: composite
+  steps:
+    - name: Configure Git
+      shell: bash
+      run: |
+        git config --global user.name github-actions
+        git config --global user.email github-actions@github.com
+    - name: Update gh-pages from ${{ inputs.directory }}
+      shell: bash
+      run: |
+        '${{ github.action_path }}'/subdir-to-gh-pages.sh \
+          --sync='${{ inputs.remote }}' -- '${{ inputs.directory }}'
