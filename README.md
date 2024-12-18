@@ -17,6 +17,8 @@ Actions
 
  * [setup-bbi](./setup-bbi): Install [bbi][].
 
+ * [subdir-to-gh-pages](./subdir-to-gh-pages): Push a directory's
+   contents to gh-pages.
 
 [bbi]: https://github.com/metrumresearchgroup/bbi
 [MPN]: https://mpn.metworx.com
